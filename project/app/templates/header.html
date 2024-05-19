@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering Website</title>
+
+    <!--font awesome cdn link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--Custom css file link -->
+
+    <link  rel="stylesheet" href="\static\header.css">
+
+<style>
+    .searchh{
+        border:2px solid pink;
+        height:30px;
+        width:200px;
+        margin-top:34px;
+    }
+    button{
+        background-color:antiquewhite;
+    }
+</style>
+
+    <!--Custom js file link-->
+    <!-- <script src="script.js"></script> -->
+    <style>
+        .but{
+            color:violet;
+            margin:20px;
+            background-color:brown
+
+        }
+    </style>
+
+</head>
+<body>
+
+    
+    <!--header section starts -->
+    <div class="ok">
+ <div class="all">
+    <div class="navdiv">
+    <header class="header">
+        
+        
+            <img src="\static\img\logo.png" alt="">
+     
+    </header>
+   
+</div>
+    <nav class="navbar">
+        <ul>
+       
+        
+        <li><a href="{% url 'home' %}">Home</a></li>
+      <li>  <a href="{% url 'tracker' %}">Quotes</a></li>
+      <li><a href="{% url 'thought' %}">Creation</a></li>
+        <li><a href="{% url 'ideas' %}">Your Ideas</a></li>
+
+       <li> <a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+       
+        </ul>
+        <!-- <div class="butt">
+            
+           <a href="{% url 'registration' %}"><button type="submit">SignUP</button></a>
+            
+            <button type="submit">Login</button> -->
+
+            <div class="fa-solid fa-magnifying-glass"></div>
+        <input class="searchh" type="search"  placeholder="Search here ...">
+        <!-- <button for="search-box" class="fa-solid fa-magnifying-glass" id="search-btn"></button>
+          -->
+          <a href="{% url 'logout' %}"><button type="submit" class="but">LogOut</button></a>
+
+        </div>
+       
+    </nav>
+
+    
+ 
+   
+    </div>
+</div>
+
+    <hr> 
+
+    
+
+    <!--header section ends -->
+</body>
+</html> 

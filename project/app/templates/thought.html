@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% include 'header.html' %}
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\static\thought.css">
+</head>
+<body>
+    <form method="post" action="{% url 'story' %}" >
+        {% csrf_token %}
+    <div class="thought">
+    <h2>Write Your Label</h2><br>
+    <label>Title</label><br>
+    <input type="text" name="title"><br><br>
+
+    <label>Story</label><br>
+    <textarea name="story"></textarea> <br><br>
+
+
+    <button type="submit">Submit</button>
+</div>
+
+</form>
+
+</body>
+</html>

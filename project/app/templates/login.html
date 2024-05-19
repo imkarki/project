@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "header.html" %}
+
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\static\login.css">
+</head>
+<body>
+    <form  action="{% url 'thought' %}" method="post">
+    {% csrf_token %}
+    <div class="homepage">
+        <h2>Admin login</h2>
+        <div class="web"> 
+
+        <label>Email Id:</label><br>
+        <input type="email" placeholder="Enter your Email Id" class="el" name="email "><br><br>
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter your password" class="Passw" name="password"><br><br>
+
+        <a href="{% url 'm_view' %}"><button type="submit">submit</button></a><br>
+        </div>
+
+
+    </div>
+    </form>
+</body>
+</html>

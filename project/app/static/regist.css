@@ -1,0 +1,82 @@
+*{box-sizing: border-box}
+
+h1{
+  background-color:aqua;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  /* margin:100px auto 0px auto; */
+  /* border:2px solid black; */
+  text-align:center;
+  /* border:2px solid black; */
+  
+}
+body{
+  background-color:black;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text], input[type=email] {
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color:aquamarine;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+label{
+  align-items:center;
+}
+
+body{
+  background: url("static/img/back.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:black;
+  
+  
+}

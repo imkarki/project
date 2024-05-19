@@ -1,0 +1,28 @@
+.thought{
+    margin:100px auto 0px auto;
+    border:2px solid red;
+    height:400px;
+    width:400px;
+    text-align:center;
+}
+textarea{
+    width:350px;
+    height:100px;
+}
+input{
+    width:350px;
+    height:50px;
+}
+label{
+    color:white;
+}
+
+button{
+    margin:20px;
+}
+body{
+    background-color:black;
+}
+h2{
+    color:white;
+}

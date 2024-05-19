@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering Website</title>
+
+    <!--font awesome cdn link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--Custom css file link -->
+
+    <link  rel="stylesheet" href="static\home.css">
+
+    <style>
+        h1{
+            color:antiquewhite;
+            font-size:larger;
+            font-weight: bolder;
+            font-style:inherit;
+            text-align:center;
+            margin-top:90px;
+            font-size:50px;
+
+
+        }
+
+        #datetime{
+            color:white;
+            
+            font-weight: bolder;
+            font-style:inherit;
+          
+            margin-top:390px;
+            font-size:20px;
+            float:left;
+
+        }
+    </style>
+
+
+</head>
+<body>
+
+    
+    <!--header section starts -->
+ <div class="all">
+    <div class="navdiv">
+    <header class="header">
+        
+        <a href="#">
+            <img src="static\img\logo.png" alt="">
+        </a>
+    </header>
+   
+</div>
+    <nav class="navbar">
+        <ul>
+       
+        
+        <li><a href="{% url 'home' %}">Home</a></li>
+      <li>  <a href="{% url 'tracker' %}">Quotes</a></li>
+      <li><a href="{% url 'thought' %}">Creation</a></li>
+        <li><a href="{% url 'ideas' %}">Your Ideas</a></li>
+       <li> <a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+        <div class="butt">
+            
+           <a href="{% url 'registration' %}"><button type="submit">SignUP</button></a>
+            
+           <a href="{% url 'login' %}"><button type="submit">Login</button></a>
+
+            <!-- <div class="fa-solid fa-magnifying-glass"></div> -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="searchh" type="search" id="search-box" placeholder="Search here ...">
+        <button for="search-box" class="fa-solid fa-magnifying-glass" id="search-btn"></button>
+         
+
+        </div>
+       
+    </nav>
+
+    
+ 
+   
+    </div>
+
+    <hr> 
+    
+
+
+    <div class="container">
+        <h1>Welcome to the "Start Today" website</h1>
+        <div id="datetime">date:</div>
+    </div>
+
+    <script src='static/homejava.js'></script>
+
+    
+
+    <!--header section ends -->
+</body>
+</html> 
